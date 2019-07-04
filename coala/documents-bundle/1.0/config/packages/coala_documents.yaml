@@ -1,0 +1,15 @@
+coala_documents:
+    documentClass: AppBundle\Entity\Document\Document # default value
+    fileClass: AppBundle\Entity\Document\File # default value
+    filesPath: "%kernel.project_dir%/data/files"
+    allowedMimeTypes: #only needed, if validator is used
+        - 'application/vnd.ms-excel'
+        - 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+        - 'application/pdf'
+        - 'application/msword'
+        - 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+        - 'image/gif'
+        - 'image/png'
+        - 'image/jpeg'
+        - 'text/csv'
+        - 'text/plain'
